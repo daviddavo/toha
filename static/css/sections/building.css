@@ -32,3 +32,10 @@ body {
   color: white;
   text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+  .building-section-content {
+    width: 100%;
+    border: 3px transparent;
+  }
+}

@@ -1,0 +1,13 @@
+{{ $building:= site.Data.building }}
+{{ if (index site.Data site.Language.Lang).site.building }}
+    {{ $building = (index site.Data site.Language.Lang).site.building }}
+{{ end }}
+
+{{ if $building }}
+    <div class="building-section-wrapper px-3 py-4">
+        <div class="building-section-content m-auto px-3 py-2">
+            <b class="h2">{{ $building.title }}</b><br>
+            <small>{{ $building.subtitle }}</small>
+        </div>
+    </div>
+{{ end }}

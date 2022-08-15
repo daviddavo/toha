@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{ "/css/sections/achievements.css" | relURL }}"/>
     <link rel="stylesheet" href="{{ "/css/sections/accomplishments.css" | relURL }}"/>
     <link rel="stylesheet" href="{{ "/css/sections/publications.css" | relURL }}"/>
+    <link rel="stylesheet" href="{{ "/css/sections/building.css" | relURL }}"/>
 
     <!--================= custom style overrides =========================-->
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
@@ -43,6 +44,9 @@
 
     <!--- ADD HOME SECTION ---------------->
     {{- partial "sections/home.html" . -}}
+
+    <!--- ADD BUILDING SECTION ------------>
+    {{- partial "sections/building.html" . -}}
 
     <!--- ADD OPTIONAL SECTIONS ----------->
     {{ $sections:= site.Data.sections }}

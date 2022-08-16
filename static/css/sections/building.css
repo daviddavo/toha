@@ -29,8 +29,13 @@ body {
   background-color: #ffb101;
   border: 3px solid black;
 
-  color: white;
+  color: black;
   text-align: center;
+  font-family: Stardos Stencil, cursive;
+}
+
+.building-section-content b {
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {

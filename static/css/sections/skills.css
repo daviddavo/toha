@@ -1,5 +1,5 @@
 .skills-section .card .card-head {
-  background-color: #f9fafc;
+  background-color: var(--color-snow);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

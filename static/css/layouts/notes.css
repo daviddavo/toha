@@ -46,11 +46,11 @@
 
 .note-title{
   padding-left: 1rem;
-  color: #248aaa;
+  color: var(--color-link);
 }
 
 .note-title span{
-  background: #e5e9f2;
+  background: var(--color-dirty-snow);
   padding-right: 5px;
 }
 
@@ -60,7 +60,7 @@
   width:98%;
   height:100%;
   margin-bottom:-26px;
-  border-bottom: 1px solid #248aaa;
+  border-bottom: 1px solid var(--color-link);
 }
 
 .note-card .card-body{

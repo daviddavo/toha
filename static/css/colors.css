@@ -1,0 +1,29 @@
+/* ========= Colors ============
+Heading:       #1C2D41
+Paragraph:     #3C4858
+Iconography:   #8392A5
+Secondary:     #C0CCDA
+Dirty Snow:    #E5E9F2
+Snow:          #F9FAFC
+
+Link:          #248AAA
+Link (Hover):  #207089
+
+Magenta: #7551E9
+Orange:  #FF7D51
+Pink:    #ED63D2
+Green:   #2DCA73
+Yellow:  #FFC212
+*/
+
+:root {
+    --color-heading: #1c2d41;
+    --color-paragraph: #3c4858;
+    --color-iconography: #8392a5;
+    --color-secondary: #c0ccda;
+    --color-dirty-snow: #e5e9f2;
+    --color-snow: #f9fafc;
+
+    --color-link: #248aaa;
+    --color-link-hover: #207089;
+}

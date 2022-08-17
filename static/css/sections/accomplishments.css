@@ -6,7 +6,7 @@
 
 .accomplishments-section .card {
   background: #fff;
-  border-top: 2px solid #248aaa;
+  border-top: 2px solid var(--color-link);
 }
 .accomplishments-section .card .card-header {
   background: none;
@@ -14,7 +14,7 @@
 }
 
 .accomplishments-section .card .card-header .sub-title {
-  color: #8392a5;
+  color: var(--color-iconography);
   margin-top: 0.4rem;
 }
 

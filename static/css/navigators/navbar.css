@@ -18,17 +18,17 @@
 }
 
 .initial-navbar .navbar-brand {
-  color: #c0ccda;
+  color: var(--color-secondary);
   font-weight: 600;
 }
 
 .initial-navbar li a {
-  color: #c0ccda;
+  color: var(--color-secondary);
 }
 
 .initial-navbar .navbar-nav .active,
 .initial-navbar li a:hover {
-  color: #f9fafc;
+  color: var(--color-snow);
   transition: all 0.3s ease-out;
   transform: translateY(-2px);
 }
@@ -39,7 +39,7 @@
 
 .navbar-collapse.show,
 .navbar-collapse.collapsing {
-  background-color: #f9fafc;
+  background-color: var(--color-snow);
   padding-left: 1rem;
 }
 
@@ -48,21 +48,21 @@
 /* --- state after scroll start --- */
 
 .final-navbar {
-  background-color: #f9fafc;
-  color: #1c2d41;
+  background-color: var(--color-snow);
+  color: var(--color-heading);
   transition: all 0.3s ease-out;
 }
 
 .final-navbar .navbar-brand {
-  color: #1c2d41;
+  color: var(--color-heading);
   font-weight: 600;
 }
 
 .final-navbar li a {
-  color: #1c2d41;
+  color: var(--color-heading);
   font-weight: 500;
   transition: all 0.3s ease-out;
-  border-bottom: 2px solid#F9FAFC;
+  border-bottom: 2px solidvar(--color-snow);
 }
 
 .final-navbar .navbar-nav .active,
@@ -80,7 +80,7 @@
 
 .navbar-collapse.show li a,
 .navbar-collapse.collapsing li a {
-  color: #1c2d41;
+  color: var(--color-heading);
   font-weight: 500;
   transition: all 0.3s ease-out;
 }
@@ -134,7 +134,7 @@
 }
 
 .top-navbar .dropdown-menu a {
-  color: #1c2d41;
+  color: var(--color-heading);
   border-bottom: none;
 }
 
@@ -198,7 +198,7 @@
   }
 
   .dropdown-divider {
-    border-top: 1px solid #c0ccda;
+    border-top: 1px solid var(--color-secondary);
   }
   #top-navbar-divider {
     background: rgba(0, 0, 0, 0.6);
@@ -237,7 +237,7 @@
   }
 
   .dropdown-divider {
-    border-top: 1px solid #c0ccda;
+    border-top: 1px solid var(--color-secondary);
   }
   #top-navbar-divider {
     background: rgba(0, 0, 0, 0.6);
@@ -270,7 +270,7 @@
   }
 
   .dropdown-divider {
-    border-top: 1px solid #c0ccda;
+    border-top: 1px solid var(--color-secondary);
   }
   #top-navbar-divider {
     background: rgba(0, 0, 0, 0.6);

@@ -2,7 +2,7 @@
   height: 100vh;
   padding: 0;
   margin: 0;
-  color: #f9fafc;
+  color: var(--color-snow);
   overflow: hidden;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .home .greeting, .home .greeting-subtitle {
-  color: #f9fafc;
+  color: var(--color-snow);
 }
 
 .home .typing-carousel {
@@ -60,7 +60,7 @@
 
 .arrow {
   position: absolute;
-  color: #f9fafc;
+  color: var(--color-snow);
   font-size: 1.5rem;
   bottom: 0;
 }

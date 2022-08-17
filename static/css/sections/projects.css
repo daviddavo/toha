@@ -1,5 +1,5 @@
 .projects-section .card .card-header {
-  background-color: #f9fafc;
+  background-color: var(--color-snow);
   padding: 0.7rem;
   padding-bottom: 0rem;
   text-decoration: none;
@@ -21,7 +21,7 @@
 }
 
 .projects-section .card .card-header .sub-title {
-  color: #8392a5;
+  color: var(--color-iconography);
   margin-top: 0.4rem;
 }
 

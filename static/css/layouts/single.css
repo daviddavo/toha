@@ -1,9 +1,9 @@
 body {
-  background-color: #e5e9f2;
+  background-color: var(--color-dirty-snow);
   position: relative;
 }
 .read-area {
-  background-color: #f9fafc;
+  background-color: var(--color-snow);
 }
 
 .wrapper {
@@ -26,7 +26,7 @@ body {
   padding-right: 1rem;
 }
 .content {
-  background: #e5e9f2;
+  background: var(--color-dirty-snow);
 }
 .toc-section {
   flex: 20%;
@@ -42,7 +42,7 @@ body {
   top: 4.5rem;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #f9fafc;
+  background-color: var(--color-snow);
   margin-right: 0.5rem;
   /* box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16); */
   transition: all ease-out 0.3s;
@@ -74,7 +74,7 @@ body {
   padding: 0;
   padding-left: 0.5rem;
   transition: all ease-out 0.3s;
-  color: #1c2d41;
+  color: var(--color-heading);
 }
 
 .toc .nav-link:hover,
@@ -82,7 +82,7 @@ body {
 .toc .nav-link.active {
   padding-left: 1rem;
   padding-right: 0.5rem;
-  background-color: #248aaa;
+  background-color: var(--color-link);
   color: #f9f9f9;
   transition: all ease-out 0.3s;
 }
@@ -118,11 +118,11 @@ body {
   width: 120px;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #f9fafc;
+  background-color: var(--color-snow);
   padding: 5px;
 }
 .author-profile p {
-  color: #8392a5;
+  color: var(--color-iconography);
 }
 
 .title {
@@ -146,14 +146,14 @@ h6 {
 }
 
 .post-content blockquote {
-  border-left: 4px solid #248aaa;
+  border-left: 4px solid var(--color-link);
   background-color: #248baa15;
   padding: 0.3rem;
   padding-left: 1rem;
 }
 
 .post-content blockquote > p {
-  color: #3c4858;
+  color: var(--color-paragraph);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -169,7 +169,7 @@ h6 {
 }
 
 .next-prev-navigator a:hover {
-  color: #3c4858;
+  color: var(--color-paragraph);
   transition: all 0.3 ease-out;
 }
 
@@ -186,9 +186,9 @@ h6 {
 }
 
 .next-prev-navigator .btn-outline-info {
-  color: #f9fafc !important;
-  border-color: #e5e9f2 !important;
-  background-color: #248aaa !important;
+  color: var(--color-snow) !important;
+  border-color: var(--color-dirty-snow) !important;
+  background-color: var(--color-link) !important;
   transition: all 0.3s ease-out;
 }
 
@@ -197,8 +197,8 @@ h6 {
 }
 
 .next-prev-navigator .btn-outline-info:hover {
-  color: #3c4858 !important;
-  background-color: #e5e9f2 !important;
+  color: var(--color-paragraph) !important;
+  background-color: var(--color-dirty-snow) !important;
   transition: all 0.3s ease-out;
 }
 
@@ -207,14 +207,14 @@ h6 {
 }
 
 .share-buttons .btn {
-  color: #e5e9f2 !important;
+  color: var(--color-dirty-snow) !important;
   transition: all 0.3s ease-out !important;
 }
 
 .share-buttons .btn:hover,
 .share-buttons .btn:focus {
-  background-color: #248aaa !important;
-  border-color: #248aaa !important;
+  background-color: var(--color-link) !important;
+  border-color: var(--color-link) !important;
   transition: all 0.3s ease-out !important;
 }
 
@@ -249,8 +249,8 @@ h6 {
 }
 
 .share-buttons .diaspora-btn {
-  background-color: #3c4858 !important;
-  border-color: #3c4858 !important;
+  background-color: var(--color-paragraph) !important;
+  border-color: var(--color-paragraph) !important;
 }
 
 .share-buttons .mastodon-btn {
@@ -264,8 +264,8 @@ h6 {
 }
 
 .share-buttons .email-btn {
-  background-color: #3c4858 !important;
-  border-color: #3c4858 !important;
+  background-color: var(--color-paragraph) !important;
+  border-color: var(--color-paragraph) !important;
   transition: all 0.3s ease-out !important;
 }
 
@@ -281,7 +281,7 @@ h6 {
   position: fixed;
   bottom: 0rem;
   right: 1rem;
-  color: #248aaa;
+  color: var(--color-link);
   font-size: 24pt;
   z-index: 900000;
   visibility: hidden;
@@ -307,13 +307,13 @@ h6 {
   font-size: 0.8em;
   list-style-type: none;
   display: inline-block;
-  background: #248aaa;
+  background: var(--color-link);
   margin-left: 0.2em;
   margin-right: 0.2em;
 }
 
 .taxonomy-terms a {
-  color: #f9fafc;
+  color: var(--color-snow);
 }
 
 /* ============= Device specific fixes ======= */

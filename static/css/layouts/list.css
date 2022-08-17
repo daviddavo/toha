@@ -74,12 +74,12 @@
 }
 
 .paginator .page-item > a {
-  color: #248aaa;
+  color: var(--color-link);
 }
 
 .paginator .page-item.active > a {
-  background-color: #248aaa;
-  color: #f9fafc;
+  background-color: var(--color-link);
+  color: var(--color-snow);
 }
 
 .navbar-toggler {

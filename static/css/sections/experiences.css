@@ -18,7 +18,7 @@
 
 .experiences-section ul > li {
   margin-left: 0;
-  color: #3c4858;
+  color: var(--color-paragraph);
 }
 
 .experiences-section .designation {
@@ -28,8 +28,8 @@
 .circle {
   padding: 13px 20px;
   border-radius: 50%;
-  background-color: #248aaa;
-  color: #f9fafc;
+  background-color: var(--color-link);
+  color: var(--color-snow);
   max-height: 50px;
   z-index: 2;
 }
@@ -41,7 +41,7 @@
 .timeline .vertical-line::after {
   content: "";
   position: absolute;
-  border-left: 3px solid #248aaa;
+  border-left: 3px solid var(--color-link);
   z-index: 1;
   height: 100%;
   left: 50%;
@@ -57,7 +57,7 @@
 }
 
 .timeline .horizontal-line hr {
-  border-top: 3px solid #248aaa;
+  border-top: 3px solid var(--color-link);
   margin: 0;
   top: 17px;
   position: relative;
@@ -69,7 +69,7 @@
 }
 
 .timeline .horizontal-line .corner {
-  border: 3px solid #248aaa;
+  border: 3px solid var(--color-link);
   width: 100%;
   position: relative;
   border-radius: 15px;

@@ -24,6 +24,8 @@ body {
 }
 
 .building-section-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 
   background-color: #ffb101;

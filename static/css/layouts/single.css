@@ -164,7 +164,7 @@ h6 {
 }
 
 .next-prev-navigator a {
-  color: #2098d1;
+  color: var(--color-hover-lighten);
   transition: all 0.3s ease-out;
 }
 
@@ -294,7 +294,7 @@ h6 {
 }
 
 #scroll-to-top:hover {
-  color: #2098d1;
+  color: var(--color-hover-lighten);
 }
 
 #scroll-to-top.show {

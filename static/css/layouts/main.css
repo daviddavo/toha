@@ -50,12 +50,12 @@ a:hover {
 }
 
 .btn-outline-info {
-  color: #2098d1 !important;
-  border-color: #2098d1 !important;
+  color: var(--color-hover-lighten) !important;
+  border-color: var(--color-hover-lighten) !important;
 }
 
 .btn-outline-info:hover {
-  background-color: #2098d1 !important;
+  background-color: var(--color-hover-lighten) !important;
   color: var(--color-dirty-snow) !important;
 }
 
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .btn-info:hover {
-  background-color: #2098d1 !important;
+  background-color: var(--color-hover-lighten) !important;
   color: var(--color-dirty-snow) !important;
 }
 

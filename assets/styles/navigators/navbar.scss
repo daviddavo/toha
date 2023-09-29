@@ -1,0 +1,184 @@
+@mixin nav-item-hover-effect() {
+  color: $accent-color !important;
+  border-bottom: 2px solid $accent-color !important;
+  background: rgba($accent-color, 0.1);
+  @include transition();
+}
+
+.top-navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 99999;
+  margin: 0px;
+  padding-top: 0.4rem;
+  color: $heading-color;
+  text-align: center;
+  background-color: $bg-primary;
+  @include transition();
+
+  .navbar-brand {
+    color: $heading-color;
+    font-weight: 600;
+    img {
+      width: 42px;
+      padding: 5px;
+      margin-left: -10px;
+    }
+  }
+
+  img {
+    display: inline-block;
+  }
+
+  .sidebar-icon {
+    width: 32px;
+    height: 32px;
+    filter: invert(0.5);
+  }
+
+  li {
+    a {
+      color: $heading-color;
+      font-weight: 500;
+      @include transition();
+      border-bottom: 2px solid transparent;
+      &:hover {
+        @include nav-item-hover-effect();
+      }
+    }
+  }
+
+  .navbar-nav .active {
+    @include nav-item-hover-effect();
+  }
+
+  #top-navbar-divider {
+    margin-top: 10px;
+    background-color: $muted-text-color;
+    height: 20px;
+    width: 2px;
+  }
+
+  .dropdown-menu {
+    box-shadow: $box-shadow;
+    border: 1px solid $border-color;
+    max-height: 0vh;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+    @include transition();
+
+    &.show {
+      max-height: 100vh;
+      visibility: visible;
+      @include transition();
+
+      a {
+        color: $heading-color !important;
+
+        &:hover {
+          @include nav-item-hover-effect();
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    margin-top: -5px;
+    &.show,
+    &.collapsing {
+      background-color: $bg-primary;
+      padding-left: 1rem;
+
+      li {
+        a {
+          color: $heading-color;
+          font-weight: 500;
+          @include transition();
+        }
+      }
+      .navbar-nav {
+        .active {
+          color: $accent-color;
+        }
+        a:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+
+  &.transparent-navbar {
+    background-color: transparent;
+    .navbar-brand {
+      color: $inverse-text-color;
+      font-weight: 600;
+    }
+    li {
+      a {
+        color: $inverse-text-color;
+      }
+    }
+    .feather-menu {
+      stroke: $inverse-text-color;
+    }
+  }
+
+  @include media('<=large') {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+    .container {
+      max-width: 100%;
+    }
+
+    &.transparent-navbar {
+      .navbar-nav .active,
+      li a:hover {
+        color: $accent-color;
+        @include transition();
+      }
+    }
+
+    #top-navbar-divider {
+      height: auto;
+      width: auto;
+      margin-right: 15px;
+      border-top: 1px solid #c0ccda;
+    }
+
+    .dropdown-menu {
+      text-align: center;
+      margin-right: 1rem;
+      @include transition();
+    }
+
+    .languageSelector {
+      position: fixed;
+      right: 0.5rem;
+      bottom: 1rem;
+      z-index: 10000000;
+      background-color: $bg-primary;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  @include media('<=small') {
+    .dropdown-menu {
+      margin-left: -1rem;
+      margin-right: 0rem;
+    }
+  }
+}
+
+.feather-sidebar,
+.feather-menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: $text-color;
+}

@@ -31,6 +31,7 @@ body {
 
   .navbar-brand {
     color: get-light-color('heading-color');
+    text-decoration: none !important;
     font-weight: 600;
     img {
       width: 42px;
